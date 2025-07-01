@@ -68,7 +68,7 @@ Thanks for your time and effort. We'll be in touch soon!
 
 I have successfully implemented all three parts of the technical assessment, creating a comprehensive todo application with advanced project management features. The solution includes due date management, AI-powered image generation, and sophisticated task dependency analysis.
 
-### Part 1: Due Dates ✅
+### Part 1: Due Dates
 
 **Implementation Details:**
 - Added `dueDate` field to the Todo model in Prisma schema
@@ -89,7 +89,7 @@ I have successfully implemented all three parts of the technical assessment, cre
 - Frontend date validation and formatting
 - Responsive date input with Enter key support
 
-### Part 2: Image Generation ✅
+### Part 2: Image Generation
 
 **Implementation Details:**
 - Integrated Pexels API for relevant image search
@@ -112,7 +112,7 @@ I have successfully implemented all three parts of the technical assessment, cre
 - Image optimization and responsive design
 - Environment variable setup for API key
 
-### Part 3: Task Dependencies ✅
+### Part 3: Task Dependencies
 
 **Implementation Details:**
 - Implemented self-referencing many-to-many relationship for dependencies
@@ -145,4 +145,4 @@ I have successfully implemented all three parts of the technical assessment, cre
 
 ### Screen Recording
 
-*[Screen recording demonstrating the application functionality will be added here]*
+https://github.com/user-attachments/assets/7e7baa8b-399d-4faa-af6e-005be445d9b6
