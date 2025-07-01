@@ -7,6 +7,14 @@ This is a technical assessment as part of the interview process for Soma Capital
 
 To begin, clone this repository to your local machine.
 
+## Environment Setup
+
+Create a `.env.local` file in the root directory and add your Pexels API key:
+
+```bash
+PEXELS_API_KEY=your_pexels_api_key_here
+```
+
 ## Development
 
 This is a [NextJS](https://nextjs.org) app, with a SQLite based backend, intended to be run with the LTS version of Node.
