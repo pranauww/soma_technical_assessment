@@ -61,3 +61,88 @@ Implement a task dependency system that allows tasks to depend on other tasks. T
 3. Submit a link to your repository in the application form.
 
 Thanks for your time and effort. We'll be in touch soon!
+
+## Solution
+
+### Overview
+
+I have successfully implemented all three parts of the technical assessment, creating a comprehensive todo application with advanced project management features. The solution includes due date management, AI-powered image generation, and sophisticated task dependency analysis.
+
+### Part 1: Due Dates ✅
+
+**Implementation Details:**
+- Added `dueDate` field to the Todo model in Prisma schema
+- Implemented date picker in the frontend for selecting due dates
+- Added visual indicators for overdue tasks (red text with "Overdue" label)
+- Fixed timezone handling to ensure accurate date display
+- Enhanced date formatting for better user experience
+
+**Key Features:**
+- Date selection with minimum date constraint (prevents selecting past dates)
+- Overdue detection with visual feedback
+- Proper date serialization and timezone handling
+- User-friendly date formatting (e.g., "Dec 25, 2024")
+
+**Technical Implementation:**
+- Database migration for `dueDate` field
+- API endpoints handle date creation and retrieval
+- Frontend date validation and formatting
+- Responsive date input with Enter key support
+
+### Part 2: Image Generation ✅
+
+**Implementation Details:**
+- Integrated Pexels API for relevant image search
+- Added `imageUrl` field to store generated images
+- Implemented loading states during image fetching
+- Created fallback placeholders for failed image loads
+- Optimized image display with proper aspect ratio handling
+
+**Key Features:**
+- Automatic image search based on todo title
+- Loading indicators while images are being fetched
+- Graceful error handling with placeholder images
+- Responsive image display with `object-contain` for optimal viewing
+- Environment-based API key configuration
+
+**Technical Implementation:**
+- Created `lib/pexels.ts` utility for API integration
+- Database migration for `imageUrl` field
+- Error handling for API failures
+- Image optimization and responsive design
+- Environment variable setup for API key
+
+### Part 3: Task Dependencies ✅
+
+**Implementation Details:**
+- Implemented self-referencing many-to-many relationship for dependencies
+- Created circular dependency detection algorithm
+- Built critical path analysis using depth-first search
+- Calculated earliest start dates based on dependency chains
+- Developed comprehensive dependency graph visualization
+
+**Key Features:**
+- Multiple dependency support per task
+- Circular dependency prevention with real-time validation
+- Critical path identification and highlighting
+- Earliest start date calculation for project planning
+- Interactive dependency graph visualization
+- Dependency management with checkbox interface
+
+**Technical Implementation:**
+- Database schema with `TaskDependency` join table
+- Circular dependency detection using DFS algorithm
+- Critical path calculation with backtracking
+- Earliest start date computation with dependency consideration
+- Enhanced UI with analysis toggle and visual indicators
+
+### Key Algorithms Implemented
+
+1. **Circular Dependency Detection**: DFS-based algorithm to prevent dependency cycles
+2. **Critical Path Analysis**: Longest path calculation using topological sorting
+3. **Earliest Start Date Calculation**: Dependency-aware scheduling algorithm
+4. **Dependency Graph Traversal**: Efficient graph algorithms for analysis
+
+### Screen Recording
+
+*[Screen recording demonstrating the application functionality will be added here]*
